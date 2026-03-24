@@ -65,6 +65,12 @@ cardio INT
 );
 GO
 
+/*
+=======================
+Insert Data Into Bronze
+=======================
+*/
+
 TRUNCATE TABLE bronze.data_healthcare_dataset_stroke_data;
 BULK INSERT bronze.data_healthcare_dataset_stroke_data
 FROM 'C:\Users\MOHAMED\Desktop\data\healthcare_dataset_stroke_data.csv'
